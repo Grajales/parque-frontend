@@ -23,23 +23,21 @@ class App extends Component {
       this.setState({
         comments: response.data.comments,
       });
-      console.log("comments1",this.state.comments)
     });
   }
 
 
   render() {
- 
+    console.log("App dot JS",this.state.comments);
     return (
       <div className="App">
         <nav>
           <Link to="/">Home</Link>
         </nav>
         <main>
-           <Route exact path='/'
-              render={routerProps =>
+            <Route exact path='/' render={routerProps =>
                 <Home {...routerProps} {...this.state} />
-              }>
+            }>
             </Route>
     
         </main>
