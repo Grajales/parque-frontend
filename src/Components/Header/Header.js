@@ -13,6 +13,10 @@ function Header() {
                     <h2>Location</h2>
                 </Link>
                 </li>
+                <li><Link to='/contact'>
+                    <h2>Contact Us</h2>
+                </Link>
+                </li>
             </ul>
         </div>
     );

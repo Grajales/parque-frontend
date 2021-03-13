@@ -4,6 +4,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import Home from "../Home/Home"; 
 import Header from '../Header/Header' 
 import Footer from '../Footer/Footer'
+import ThemeDetail from '../Theme1/Theme1'
 import axios from "axios";
 const backendUrl =
   process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
@@ -29,7 +30,7 @@ class App extends Component {
 
 
   render() {
-    console.log("App dot JS",this.state.comments);
+    // console.log("App dot JS",this.state.comments);
     return (
       <div className="App">
         
@@ -42,7 +43,11 @@ class App extends Component {
             <Home {...routerProps} {...this.state} />
             }>
             </Route>
-    
+
+            <Route path='/theme/:id' render={routerProps =>  
+            <ThemeDetail {...routerProps} {...this.state} />
+            }>
+            </Route>
         </main>
         <Footer></Footer>
       </div>
