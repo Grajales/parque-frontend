@@ -3,7 +3,7 @@
 
 .Header {
     height: 10vh;
-    background-color: rgb(41, 102, 67);
+    background-image: url('../../Images/HomeRedBridge.jpg');
     color: cornsilk;
     padding-top: 1vh;
 }
