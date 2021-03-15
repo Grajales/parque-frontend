@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import PICNIC_IMAGE from "../../Images/HomePicnic.png";
-import PLAY_IMAGE from "../../Images/HomePlayGround.png";
-import CANNOE_IMAGE from "../../Images/HomeCannoeing.png";
-import HIKE_IMAGE from "../../Images/HomeRedBridge.jpg";
+import PICNIC_IMAGE from "./Images/HomePicnic.png";
+import PLAY_IMAGE from "./Images/HomePlayGround.png";
+import CANNOE_IMAGE from "./Images/HomeCannoeing.png";
+import HIKE_IMAGE from "./Images/HomeRedBridge.jpg";
+
 import "./Home.css";
 import { Link } from 'react-router-dom';
 import '../App/App.css';
