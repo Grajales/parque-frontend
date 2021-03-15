@@ -4,6 +4,7 @@ import PICNIC_IMAGE from "../../Images/HomePicnic.png";
 import PLAY_IMAGE from "../../Images/HomePlayGround.png";
 import CANNOE_IMAGE from "../../Images/HomeCannoeing.png";
 import HIKE_IMAGE from "../../Images/HomeRedBridge.jpg";
+import "./Home.css";
 class Home extends Component {
 render(){
         console.log("test home", this.props)
@@ -11,7 +12,7 @@ render(){
             <div> 
                 <h1>  Aurora Park      </h1> 
            {/* <Link to='/Theme/1'> <Image className='fun1' src="../../Images/HomeCannoeing.png" alt="cannoeing"/> </Link> */}
-            <img className='Home-Image' src={PICNIC_IMAGE} alt="picnic"/> <br></br>
+            <div> <img className='Home-Image' src={PICNIC_IMAGE} alt="picnic"/>  Picnic Area </div> <br></br>
             <img className='Home-Image' src={PLAY_IMAGE} alt="play"/> <br></br>
             <img className='Home-Image' src={CANNOE_IMAGE} alt="picnic"/> <br></br>
             <img className='Home-Image' src={HIKE_IMAGE} alt="picnic"/> <br></br>
