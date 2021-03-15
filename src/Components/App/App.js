@@ -4,7 +4,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import Home from "../Home/Home"; 
 import Header from '../Header/Header' 
 import Footer from '../Footer/Footer'
-import ThemeDetail from '../Theme1/Theme1'
+import ThemeDetail from '../ThemeDetail/ThemeDetail'
 // import Location from '../Location/Location'
 import ContactUs from '../ContactUs/ContactUs'
 import axios from "axios";
