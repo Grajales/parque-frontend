@@ -8,7 +8,7 @@ function Header() {
         <div className='Header'>
             <ul>
             <img src={LOGO_IMAGE} alt="" className='Header-logo' /> 
-                <Link to='/'>
+                <Link to='/' style={{ textDecoration: 'none' }}>
                 <h1>Aurora Park</h1>
                 </Link>
                 <li><Link to='/location'>
