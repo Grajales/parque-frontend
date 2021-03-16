@@ -17,7 +17,7 @@ class ContactUs extends Component {
     return (
         <div className='ContactUs'>
             
-            <div>Contact Us Page!!!</div>
+            <div>Contact Us</div>
    
             <form onSubmit={this.handleFormSubmit}>
                     name: <input type="text" name='newName'/><br />

@@ -1,0 +1,16 @@
+.Maps{
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    justify-content:center;
+  
+}
+.map-img{
+    height: 300px;
+    width: auto;
+    border: solid green 0.5vw;
+    /* padding: .1in; */
+     margin-top: 5px;
+     margin-left: 10px;
+     margin-right: 10px;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PICNIC_IMAGE from "./Images/HomePicnic.png";
 import PLAY_IMAGE from "./Images/HomePlayGround.png";
-import CANNOE_IMAGE from "./Images/HomeRedBridge.jpg";
+import HIKE_IMAGE from "./Images/HomeRedBridge.jpg";
 import ANIMALS_IMAGE from "./Images/HomeHorsesDucks.jpg";
 
 import "./Home.css";
@@ -14,7 +14,7 @@ render(){
         return(
             <div> 
                 <main> 
-                <div className="grid-container">  
+                <div className="gridContainerHome">  
                     <div className="theme1">
                         <Link to='/theme/1'> <img className='Home-Image' src={PLAY_IMAGE} alt="play"/> </Link>
                         <h2> Fun and Play </h2>
@@ -24,7 +24,7 @@ render(){
                         <h2>Picnic Area </h2>
                     </div> 
                     <div className="theme3">
-                        <Link to='/theme/3'><img className='Home-Image' src={CANNOE_IMAGE} alt="hicking"/></Link>
+                        <Link to='/theme/3'><img className='Home-Image' src={HIKE_IMAGE} alt="hicking"/></Link>
                         <h2> Outdoor Activities</h2>
                     </div>
                     <div className="theme4">

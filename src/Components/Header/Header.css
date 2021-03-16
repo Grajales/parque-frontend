@@ -23,6 +23,19 @@ img{
     text-decoration: none;
 }
 
+.Header h1 {
+    padding-top: 1vh;
+    margin-top: 0;
+    display: inline;
+    float:left;
+    /* padding-top: 1vh; */
+    /* float:inline-start; */
+    /* margin-left: 1vw; */
+    color: cornsilk;
+    text-decoration: none;
+    
+}
+
 .Header-logo {
     width: auto;
     height: 10vmin;

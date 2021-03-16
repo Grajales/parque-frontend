@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import { Switch, Route, Link, Redirect } from 'react-router-dom';
 import "../App/App.css";
+import "./ThemeDetail.css";
 import Theme1 from '../Theme1/Theme1'
 import Theme2 from '../Theme2/Theme2'
 import Theme3 from '../Theme3/Theme3'
@@ -34,19 +35,12 @@ class ThemeDetail extends Component {
         // console.log(listOfComment);
         return(
             <div className="ThemeDetail"> 
-                Theme Detail Page!!!
-                <br /><br />
-                
-                { this.props.match.params.id === "1" ? <Theme1 /> : null }
-                { this.props.match.params.id === "2" ? <Theme2 /> : null }
-                { this.props.match.params.id === "3" ? <Theme3 /> : null }
-                { this.props.match.params.id === "4" ? <Theme4 /> : null }
+               
+                { this.props.match.params.id === "1" ? <Theme1 {...this.props} /> : null }
+                { this.props.match.params.id === "2" ? <Theme2 {...this.props}/> : null }
+                { this.props.match.params.id === "3" ? <Theme3 {...this.props} /> : null }
+                { this.props.match.params.id === "4" ? <Theme4 {...this.props} /> : null }
 
-                {commentList}
-                <form id='themeForm' onSubmit={this.handleCreateComments}>
-                    Enter comment: <textarea className="enterFeedback" type="text" name='newComment'/>
-                    <input type="submit" />
-                </form>
             </div>
             
         )

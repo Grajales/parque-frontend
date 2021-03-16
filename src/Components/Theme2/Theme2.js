@@ -4,6 +4,7 @@ import PICNIC2_IMAGE from "./Images/Picnic2.png";
 import PICNIC3_IMAGE from "./Images/Playground2.jpg";
 import PICNIC4_IMAGE from "./Images/Redbridge2.jpg";
 import "./Theme2.css";
+import Comment from "../Comment/Comment";
 import { Link } from 'react-router-dom';
 import '../App/App.css';
 
@@ -13,19 +14,20 @@ render(){
         return(
             <div className="Theme2"> 
                     <h1> Picnic Area </h1>
-                <div className="grid-container2"> 
-                    <div className="T2-Image1">
-                         <img className='theme2-img' src={PICNIC1_IMAGE} alt="picnic"/> 
+                <div className="grid-container"> 
+                    <div className="Image1">
+                         <img className='theme-img' src={PICNIC1_IMAGE} alt="picnic"/> 
                     </div>
-                    <div className="T2-Image2">
-                      <img className='theme2-img' src={PICNIC2_IMAGE} alt="play"/>
+                    <div className="Image2">
+                      <img className='theme-img' src={PICNIC2_IMAGE} alt="play"/>
                     </div> 
-                    <div className="T2-Image3">
-                        <img className='theme2-img' src={PICNIC3_IMAGE} alt="picnic"/>
+                    <div className="Image3">
+                        <img className='theme-img' src={PICNIC3_IMAGE} alt="picnic"/>
                     </div>
-                    <div className="T2-Image4">
-                        <img className='theme2-img' src={PICNIC4_IMAGE} alt="picnic"/>
+                    <div className="Image4">
+                        <img className='theme-img' src={PICNIC4_IMAGE} alt="picnic"/>
                     </div>
+                    <Comment {...this.props}/> 
 
                 </div>
             </div>

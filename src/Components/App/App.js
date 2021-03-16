@@ -4,10 +4,12 @@ import { Route, Link, Switch } from "react-router-dom";
 import Home from "../Home/Home"; 
 import Header from '../Header/Header' 
 import Footer from '../Footer/Footer'
+import Location from '../Location/Location'
 import ThemeDetail from '../ThemeDetail/ThemeDetail'
 // import Location from '../Location/Location'
 import ContactUs from '../ContactUs/ContactUs'
 import axios from "axios";
+
 const backendUrl =
   process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 // const backendUrl =
@@ -55,10 +57,10 @@ class App extends Component {
             }>
             </Route>
             
-            {/* <Route path='/location' render={routerProps =>  
+            <Route path='/location' render={routerProps =>  
             <Location />
             }>
-            </Route> */}
+            </Route>
 
             <Route path='/contact' render={routerProps =>  
             <ContactUs createComments={this.addComment} />

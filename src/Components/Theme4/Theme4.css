@@ -3,20 +3,7 @@
     width: auto;
     border: solid green 0.5vw;
     /* padding: .25in; */
-     margin-top: 20px;
+     margin-top: 5px;
      margin-left: 5px;
      margin-right: 5px;
 }
-.grid-container4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". Image1 Image2 ."
-      ". Image3 Image4 .";
-  }
-  .T4-Image1 { grid-area: Image1; }
-  .T4-Image2 { grid-area: Image2; }
-  .T4-Image3 { grid-area: Image3; }
-  .T4-Image4 { grid-area: Image4; }
