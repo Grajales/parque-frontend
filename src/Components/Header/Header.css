@@ -2,11 +2,16 @@
 /* @media screen and (max-width: 1199); */
 
 .Header {
-    height: 10vh;
-    /* background-image: url('../../Images/HomeRedBridge.jpg'); */
-    background-color: aqua;
+    height: 12vh;
+    background-color: green;
     color: cornsilk;
+    /* background-size: auto; */
     padding-top: 1vh;
+    text-decoration: none;
+}
+img{
+    height: fit-content;
+    width: fit-content;
 }
 
 .Header li {
@@ -14,30 +19,40 @@
     text-align: center;
     float: right;
     padding-right: 4vw;
-    padding-top: 2vh;
+    padding-top: 5vh;
+    text-decoration: none;
 }
 
 .Header h1 {
     padding-top: 1vh;
     margin-top: 0;
     display: inline;
+    float:center;
     /* padding-top: 1vh; */
-    float:inline-start;
-    margin-left: 1vw;
+    /* float:inline-start; */
+    /* margin-left: 1vw; */
+    color: cornsilk;
+    text-decoration: none;
     
 }
 
 .Header-logo {
-    width: 7vmin;
-    height: 7vmin;
+    width: auto;
+    height: 10vmin;
     border-radius: 10px;
-    border: solid rgb(95, 63, 45) 0.25vw;
+    border: solid rgb(37, 6, 6) 0.15vw;
     float: left;
     /* margin-top: .3vh; */
-    display: inline-flex;
-    margin-left: 4vw;
+    /* display: inline-flex; */
+    margin-left: 2vw;
     padding-top: 0;
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
+  
 
-    
+  }
+  h3{
+      font-size: 70%;
+      color:cornsilk;
+      text-decoration: none;
+       
   }

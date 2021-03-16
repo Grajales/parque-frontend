@@ -1,37 +1,37 @@
 import React, { Component } from 'react';
-// import PICNIC_IMAGE from "../../Images/HomePicnic.png";
-// import PLAY_IMAGE from "../../Images/HomePlayGround.png";
-// import CANNOE_IMAGE from "../../Images/HomeCannoeing.png";
-// import HIKE_IMAGE from "../../Images/HomeRedBridge.jpg";
-// import "./Home.css";
-// import { Link } from 'react-router-dom';
-// import '../App/App.css';
+import PICNIC1_IMAGE from "./Images/Picnic.png";
+import PICNIC2_IMAGE from "./Images/Picnic2.png";
+import PICNIC3_IMAGE from "./Images/Playground2.jpg";
+import PICNIC4_IMAGE from "./Images/Redbridge2.jpg";
+import "./Theme2.css";
+import { Link } from 'react-router-dom';
+import '../App/App.css';
 
-class Home extends Component {
+class Theme2 extends Component {
 render(){
         // console.log("Home dot JS", this.props.comments);
         return(
-            <div> 
-                    <h4>this is theme 2 page!!!</h4>
-                {/* <div className="Home"> 
-                    <div>
-                        <Link to='/theme/1'> <img className='Home-Image' src={PICNIC_IMAGE} alt="picnic"/> </Link>
+            <div className="Theme2"> 
+                    <h1> Picnic Area </h1>
+                <div className="grid-container2"> 
+                    <div className="T2-Image1">
+                         <img className='theme2-img' src={PICNIC1_IMAGE} alt="picnic"/> 
                     </div>
-                    <div>
-                        <Link to='/theme/2'><img className='Home-Image' src={PLAY_IMAGE} alt="play"/></Link>
+                    <div className="T2-Image2">
+                      <img className='theme2-img' src={PICNIC2_IMAGE} alt="play"/>
                     </div> 
-                    <div>
-                        <Link to='/theme/3'><img className='Home-Image' src={CANNOE_IMAGE} alt="picnic"/></Link>
+                    <div className="T2-Image3">
+                        <img className='theme2-img' src={PICNIC3_IMAGE} alt="picnic"/>
                     </div>
-                    <div>
-                        <Link to='/theme/4'><img className='Home-Image' src={HIKE_IMAGE} alt="picnic"/></Link>
+                    <div className="T2-Image4">
+                        <img className='theme2-img' src={PICNIC4_IMAGE} alt="picnic"/>
                     </div>
 
-                </div> */}
+                </div>
             </div>
             
         )
     }
 }
 
-export default Home;
+export default Theme2;
