@@ -21,7 +21,7 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount=()=> {
     axios.get(`${backendUrl}/comments`).then((response) => {
       
       this.setState({
@@ -30,13 +30,13 @@ class App extends Component {
     });
   }
 
-  addComment(feedback, id, name, email) {
+  async addComment(feedback, id, name, email) {
     const themeId = parseInt(id)
-    // await axios.post(`${backendUrl}/comments`, { feedback, themeId });
-    console.log(feedback);
-    console.log(themeId);
-    console.log(name);
-    console.log(email);
+    await axios.post(`${backendUrl}/comments`, { feedback, themeId, name, email });
+    // console.log(feedback);
+    // console.log(themeId);
+    // console.log(name);
+    // console.log(email);
   }
 
   render() {

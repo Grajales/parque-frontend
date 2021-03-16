@@ -13,6 +13,7 @@ class ThemeDetail extends Component {
         console.log('Add comment:', e.target.newComment.value);
         this.props.createComments(e.target.newComment.value, 
                                 this.props.match.params.id);
+        
     }
 
     render(){
@@ -35,13 +36,14 @@ class ThemeDetail extends Component {
             <div className="ThemeDetail"> 
                 Theme Detail Page!!!
                 <br /><br />
-                {commentList}
+                
                 { this.props.match.params.id === "1" ? <Theme1 /> : null }
                 { this.props.match.params.id === "2" ? <Theme2 /> : null }
                 { this.props.match.params.id === "3" ? <Theme3 /> : null }
                 { this.props.match.params.id === "4" ? <Theme4 /> : null }
-                
-                <form onSubmit={this.handleCreateComments}>
+
+                {commentList}
+                <form id='themeForm' onSubmit={this.handleCreateComments}>
                     Enter comment: <textarea className="enterFeedback" type="text" name='newComment'/>
                     <input type="submit" />
                 </form>
