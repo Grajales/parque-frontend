@@ -8,6 +8,7 @@ import ThemeDetail from '../ThemeDetail/ThemeDetail'
 // import Location from '../Location/Location'
 import ContactUs from '../ContactUs/ContactUs'
 import axios from "axios";
+
 const backendUrl =
   process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 // const backendUrl =

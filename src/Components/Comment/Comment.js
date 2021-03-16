@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-// import { Switch, Route, Link, Redirect } from 'react-router-dom';
-import "../App/App.css";
-import "./ThemeDetail.css";
-import Theme1 from '../Theme1/Theme1'
-import Theme2 from '../Theme2/Theme2'
-import Theme3 from '../Theme3/Theme3'
-import Theme4 from '../Theme4/Theme4'
+// import "./Comments.css";
 
-class ThemeDetail extends Component {
+
+class Comments extends Component {
     
     handleCreateComments = (e) => {
         e.preventDefault();
@@ -34,17 +29,17 @@ class ThemeDetail extends Component {
         });
         // console.log(listOfComment);
         return(
-            <div className="ThemeDetail"> 
-               
-                { this.props.match.params.id === "1" ? <Theme1 {...this.props} /> : null }
-                { this.props.match.params.id === "2" ? <Theme2 {...this.props}/> : null }
-                { this.props.match.params.id === "3" ? <Theme3 {...this.props} /> : null }
-                { this.props.match.params.id === "4" ? <Theme4 {...this.props} /> : null }
-
+            <div className="CommentsDetail"> 
+                 
+                <form id='themeForm' onSubmit={this.handleCreateComments}>
+                    Enter comment: <textarea className="enterFeedback" type="text" name='newComment'/>
+                    <input type="submit" />
+                </form>
+                {commentList}
             </div>
             
         )
     }
 }
 
-export default ThemeDetail;
+export default Comments;

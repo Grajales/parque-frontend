@@ -14,7 +14,7 @@ render(){
         return(
             <div> 
                 <main> 
-                <div className="grid-container">  
+                <div className="gridContainerHome">  
                     <div className="theme1">
                         <Link to='/theme/1'> <img className='Home-Image' src={PLAY_IMAGE} alt="play"/> </Link>
                         <h2> Fun and Play </h2>
