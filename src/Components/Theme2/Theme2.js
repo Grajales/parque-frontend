@@ -13,13 +13,13 @@ render(){
         // console.log("Home dot JS", this.props.comments);
         return(
             <div className="Theme2"> 
-                    <h1> Picnic Area </h1>
+                    <h1 className="theme-title"> Picnic Area </h1>
                 <div className="grid-container"> 
                     <div className="Image1">
-                         <img className='theme-img' src={PICNIC1_IMAGE} alt="picnic"/> 
+                         <img className='theme-img' src={PICNIC2_IMAGE} alt="picnic"/> 
                     </div>
                     <div className="Image2">
-                      <img className='theme-img' src={PICNIC2_IMAGE} alt="play"/>
+                      <img className='theme-img' src={PICNIC1_IMAGE} alt="play"/>
                     </div> 
                     <div className="Image3">
                         <img className='theme-img' src={PICNIC3_IMAGE} alt="picnic"/>
@@ -27,6 +27,7 @@ render(){
                     <div className="Image4">
                         <img className='theme-img' src={PICNIC4_IMAGE} alt="picnic"/>
                     </div>
+                    <p className="theme-paragraph"> The park has covered picnic areas with grills and benches, bring your food and charcoal or purchase it at the local store      </p>
                     <Comment {...this.props}/> 
 
                 </div>

@@ -33,7 +33,7 @@ class Comments extends Component {
                  
                 <form id='themeForm' onSubmit={this.handleCreateComments}>
                     Enter comment: <textarea className="enterFeedback" type="text" name='newComment'/>
-                    <input type="submit" />
+                    <input type="submit" value="send" />
                 </form>
                 {commentList}
             </div>

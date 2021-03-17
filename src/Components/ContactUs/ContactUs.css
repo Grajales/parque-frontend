@@ -1,0 +1,21 @@
+.ContactUs {
+    min-height: 400px;
+    }
+  .Contact-Title{
+      font-size: large;
+      padding: 15px;
+  }
+  .name, .email, .Inquiry{
+      margin: 5px;
+      padding: 5px;
+  }
+  .button{
+    width: 10em;  
+    height: 2em; 
+    color: rgb(37, 34, 34);
+    background-color: darkgoldenrod;
+    font-size: 12px;
+    border: 2px solid rgb(37, 34, 34);
+    
+    /* border-radius: 10px; */
+  }

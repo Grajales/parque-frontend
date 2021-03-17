@@ -6,12 +6,12 @@ import FACEBOOK_LOGO from "./Images/FacebookLogo.png";
 function Footer() {
     return (
         <div className='Footer'>
+            <div className='logo-pos'>  
+             <Link to={{pathname:'https://www.facebook.com/parqueaurorahn/'}} target="blank" > <img src={FACEBOOK_LOGO} alt="" className='Facebook-logo'/> </Link>
              
-            <Link to='/'> <h1>Aurora Park</h1> </Link>
-            <Link to=''> <img src={FACEBOOK_LOGO} alt="" className='Facebook-logo' /> </Link>
-             <h2>Copyright 2021</h2>
-            
-        </div>
+        <div className="footer-copyright"> copyright 2021</div>
+         </div>
+         </div>
     );
 }
 

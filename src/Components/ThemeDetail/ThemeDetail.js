@@ -34,14 +34,18 @@ class ThemeDetail extends Component {
         });
         // console.log(listOfComment);
         return(
-            <div className="ThemeDetail"> 
-               
+        <div> 
+            <main>  
+                 <div className="ThemeDetail"> 
+                
                 { this.props.match.params.id === "1" ? <Theme1 {...this.props} /> : null }
                 { this.props.match.params.id === "2" ? <Theme2 {...this.props}/> : null }
                 { this.props.match.params.id === "3" ? <Theme3 {...this.props} /> : null }
                 { this.props.match.params.id === "4" ? <Theme4 {...this.props} /> : null }
-
-            </div>
+               
+                </div>
+            </main> 
+        </div>
             
         )
     }
