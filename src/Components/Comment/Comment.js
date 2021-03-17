@@ -35,7 +35,9 @@ class Comments extends Component {
                     Enter comment: <textarea className="enterFeedback" type="text" name='newComment'/>
                     <input type="submit" value="send" />
                 </form>
+                <div className="CommentList"> 
                 {commentList}
+                </div>
             </div>
             
         )

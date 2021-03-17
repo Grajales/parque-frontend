@@ -28,7 +28,14 @@
 .CommentsDetail {
     text-align: left;
     font-size: small;
-    margin-left: 0.5vw;
+    padding-left: 0.5vw;
+    margin-right: 1vw;
+   
+}
+.CommentList{
+  background-color: white;
+  padding-left:2vh;
+
 }
 .theme-title{
   text-align: left;
