@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./ContactUs.css";
 
 class ContactUs extends Component {
+    
     handleFormSubmit = (e) => {
         e.preventDefault();
         // console.log('Contact Us:', e.target.newInquiry.value);
@@ -10,6 +11,8 @@ class ContactUs extends Component {
                                     e.target.newName.value,
                                     e.target.newEmail.value
         );
+        this.props.history.push('/');
+        
     }
 
     render() {
