@@ -10,10 +10,11 @@ import ThemeDetail from '../ThemeDetail/ThemeDetail'
 import ContactUs from '../ContactUs/ContactUs'
 import axios from "axios";
 
-const backendUrl =
-  process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
 // const backendUrl =
-//   process.env.REACT_APP_BACKEND_URL || "https://project4-backend.herokuapp.com/api";
+//   process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
+// const backendUrl =
+//   process.env.REACT_APP_BACKEND_URL || "https://aurora-park-backend.herokuapp.com/api";
+const backendUrl = "https://aurora-park-backend.herokuapp.com/api";  
 
 class App extends Component {
   constructor(props) {
