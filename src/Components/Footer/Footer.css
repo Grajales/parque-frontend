@@ -13,17 +13,28 @@
     /* width: 100%; */
 }
 
-.Footer h1 {
-    color:cornsilk;
-    padding-top: 2vh;
-    text-align: center;
+.Footer  {
+    border-top:1px;
+    height: 8vh;
+    background-color: green;
+    margin-top: 1vh;
 }
 .Facebook-logo{
     width: auto;
-    height: 8vh;
-    margin:1vh;
+    height: 5vh;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 0.5vh 50vw 0.5vh 50vw;
 }
-.Footer h2{
+.logo-pos{
+    display: inline-block;
     text-align: center;
-    float: right;
+    
+}
+.footer-copyright {
+    /* padding-top:2px;  */
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: small;
+    color: black;
+  
 }

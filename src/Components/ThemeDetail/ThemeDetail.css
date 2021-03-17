@@ -5,27 +5,42 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    gap: 10px 0px;
     grid-template-areas:
-      "Image1 Image2 . form"
-      "Image3 Image4 . form";
+      "Image1 Image2 paragraph form"
+      "Image3 Image4 paragraph form";
   }
   .Image1 { grid-area: Image1; }
   .Image2 { grid-area: Image2; }
   .Image3 { grid-area: Image3; }
   .Image4 { grid-area: Image4; }
- .CommentsDetail {grid-area: form;}  
+ .CommentsDetail {grid-area: form;}
+ .theme-paragraph{grid-area:paragraph;}  
 
  .theme-img{
-    height: 150px;
+    height: 25vh;
     width: auto;
     border: solid green 0.5vw;
-    /* padding: .25in; */
-     margin-top: 5px;
-     margin-left: 0px;
-     margin-right: 0px;
+    float:left;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 .CommentsDetail {
     text-align: left;
     font-size: small;
+    margin-left: 0.5vw;
+}
+.theme-title{
+  text-align: left;
+
+}
+.theme-paragraph{
+  background-color: rgb(255, 123, 0);
+  text-align: left;
+  margin-right: 4vw;
+  margin-left: 0.5vw;
+  padding: 2vw;
+  color: white;
+  font-size:150% ;
+  border: solid green 0.5vw;
 }

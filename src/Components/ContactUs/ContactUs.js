@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./ContactUs.css";
 
 class ContactUs extends Component {
     handleFormSubmit = (e) => {
@@ -16,15 +16,16 @@ class ContactUs extends Component {
     
     return (
         <div className='ContactUs'>
-            
-            <div>Contact Us</div>
+            <main> 
+            <h1 className="Contact-Title">Contact Us</h1>
    
             <form onSubmit={this.handleFormSubmit}>
-                    name: <input type="text" name='newName'/><br />
-                    email: <input type="text" name='newEmail'/><br />
-                    Inquiry: <textarea type="text" name='newInquiry'/><br />
-                    <input type="submit" />
+                    name: <input className="name" type="text" name='newName'/><br />
+                    email: <input className="email" type="text" name='newEmail'/><br />
+                    Inquiry: <textarea className="Inquiry" type="text" name='newInquiry' rows="8"/><br />
+                    <input type="submit" value="Send" className="button" />
             </form>
+            </main>
 
         </div>
     )};

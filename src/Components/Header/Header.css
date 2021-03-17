@@ -7,32 +7,33 @@
     color: cornsilk;
     /* background-size: auto; */
     padding-top: 1vh;
-    text-decoration: none;
+  
 }
 img{
     height: fit-content;
     width: fit-content;
 }
 
-.Header li {
+.li-link {
     display: inline;
     text-align: center;
     float: right;
     padding-right: 4vw;
     padding-top: 5vh;
-    text-decoration: none;
+    
 }
 
-.Header h1 {
+.HeaderTitle {
     padding-top: 1vh;
     margin-top: 0;
     display: inline;
-    float:left;
+    float:center;
+    font-size: 250%;
     /* padding-top: 1vh; */
     /* float:inline-start; */
-    /* margin-left: 1vw; */
+    margin-left: 9vw;
     color: cornsilk;
-    text-decoration: none;
+  
     
 }
 
@@ -50,8 +51,8 @@ img{
   
 
   }
-  h3{
-      font-size: 70%;
+  .h-link{
+      font-size: 120%;
       color:cornsilk;
       text-decoration: none;
        
