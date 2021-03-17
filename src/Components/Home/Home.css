@@ -24,9 +24,23 @@
 main{
   background-color:antiquewhite;
   min-height: 500px;
+  margin-top: 3px;
 }
-.grid-container h2{
-  font-size: medium;
+.img-title{
+  font-size: large;
   margin-bottom: 5px;
-
+}
+@media screen and (max-width: 600px) {
+  .gridContainerHome{
+    gap: 5px 5px;
+     grid-template-areas: 
+     "theme1"
+      "theme2" 
+      "theme3" 
+      "theme4" ;
+   }
+   .img-title{
+    font-size: medium;
+    margin-bottom: 2px;
+  }
 }

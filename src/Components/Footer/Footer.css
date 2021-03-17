@@ -1,23 +1,10 @@
-.Footer {
-    height: 10vh;
-    display: flex;
-    /* display: inline; */
-  
-    
-    background-color:  green;
-    /* text-align: center; */
-    font-size: 5pt;
-    /* margin-left: -30px; */
-    color:cornsilk;
-    /* position: fixed; */
-    /* width: 100%; */
-}
-
 .Footer  {
     border-top:1px;
-    height: 8vh;
+    height: 10vh;
     background-color: green;
     margin-top: 1vh;
+    color:cornsilk;
+    
 }
 .Facebook-logo{
     width: auto;
@@ -34,7 +21,7 @@
 .footer-copyright {
     /* padding-top:2px;  */
     font-family: Verdana, Geneva, sans-serif;
-    font-size: small;
+    font-size: 5pt;
     color: black;
   
 }

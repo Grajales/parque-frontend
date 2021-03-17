@@ -17,19 +17,19 @@ render(){
                 <div className="gridContainerHome">  
                     <div className="theme1">
                         <Link to='/theme/1'> <img className='Home-Image' src={PLAY_IMAGE} alt="play"/> </Link>
-                        <h2> Fun and Play </h2>
+                        <h2 className="img-title"> Fun and Play </h2>
                     </div>
                     <div className="theme2">
                         <Link to='/theme/2'><img className='Home-Image' src={PICNIC_IMAGE} alt="picnic"/></Link>
-                        <h2>Picnic Area </h2>
+                        <h2 className="img-title">Picnic Area </h2>
                     </div> 
                     <div className="theme3">
                         <Link to='/theme/3'><img className='Home-Image' src={HIKE_IMAGE} alt="hicking"/></Link>
-                        <h2> Outdoor Activities</h2>
+                        <h2 className="img-title"> Outdoor Activities</h2>
                     </div>
                     <div className="theme4">
                         <Link to='/theme/4'><img className='Home-Image' src={ANIMALS_IMAGE} alt="animals"/></Link>
-                        <h2> Wild Life </h2>
+                        <h2 className="img-title"> Wild Life </h2>
                     </div>
 
                 </div>

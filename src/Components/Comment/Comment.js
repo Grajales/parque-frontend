@@ -41,8 +41,8 @@ class Comments extends Component {
             return (
             <div className="AllComments" key={item.id}>
                 <li>
-                {item.feedback}
-                </li>
+                {item.feedback} 
+                </li> <br></br>
             </div>
             );
         });
@@ -56,7 +56,7 @@ class Comments extends Component {
                     <textarea onChange={(e) => this.handleCreateComments(e)} 
                     className="enterFeedback" type="text" name='newComment'
                     value={this.state.newComment} />
-                    <input type="submit" onClick={(e) => this.handleSubmit(e)}/>
+                    <input type="submit" value="Send" onClick={(e) => this.handleSubmit(e)}/>
                 
                 {commentList}
                 </div>

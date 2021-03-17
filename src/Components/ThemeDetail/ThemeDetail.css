@@ -27,7 +27,7 @@
 }
 .CommentsDetail {
     text-align: left;
-    font-size: small;
+    font-size: 50%;
     padding-left: 0.5vw;
     margin-right: 1vw;
    
@@ -35,19 +35,32 @@
 .CommentList{
   background-color: white;
   padding-left:2vh;
+  list-style-type: none;
 
 }
 .theme-title{
   text-align: left;
+  font-size: large;
 
 }
 .theme-paragraph{
   background-color: rgb(255, 123, 0);
   text-align: left;
   margin-right: 4vw;
-  margin-left: 0.5vw;
+  margin-left: 0vw;
   padding: 2vw;
   color: white;
-  font-size:150% ;
-  border: solid green 0.5vw;
+  font-size:90% ;
+  border: solid burlywood 0.5vw;
+}
+@media screen and (max-width: 600px) {
+  .grid-container{
+     grid-template-areas: 
+     "Image1"
+      "Image2" 
+      "Image3" 
+      "Image4" 
+      "paragraph" 
+      "form";   
+}
 }
