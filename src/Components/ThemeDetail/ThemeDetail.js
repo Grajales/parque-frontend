@@ -14,7 +14,7 @@ class ThemeDetail extends Component {
         console.log('Add comment:', e.target.newComment.value);
         this.props.createComments(e.target.newComment.value, 
                                 this.props.match.params.id);
-        
+        // this.props.history.push('/theme/'+this.props.match.params.id);
     }
 
     render(){

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-
+import { Redirect } from 'react-router-dom';
 
 class ContactUs extends Component {
+    
     handleFormSubmit = (e) => {
         e.preventDefault();
         // console.log('Contact Us:', e.target.newInquiry.value);
@@ -10,6 +11,8 @@ class ContactUs extends Component {
                                     e.target.newName.value,
                                     e.target.newEmail.value
         );
+        this.props.history.push('/');
+        
     }
 
     render() {
@@ -23,8 +26,10 @@ class ContactUs extends Component {
                     name: <input type="text" name='newName'/><br />
                     email: <input type="text" name='newEmail'/><br />
                     Inquiry: <textarea type="text" name='newInquiry'/><br />
+                    
                     <input type="submit" />
             </form>
+          
 
         </div>
     )};

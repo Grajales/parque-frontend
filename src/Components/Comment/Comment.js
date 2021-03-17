@@ -3,17 +3,36 @@ import React, { Component } from 'react';
 
 
 class Comments extends Component {
-    
-    handleCreateComments = (e) => {
+    constructor (props) {
+        super(props)
+        this.state = {
+          newComment: ''
+        }
+    }
+
+    handleCreateComments =(e)=> {
         e.preventDefault();
-        console.log('Add comment:', e.target.newComment.value);
-        this.props.createComments(e.target.newComment.value, 
-                                this.props.match.params.id);
+        console.log('New comment:', e.target.value);
+        this.setState({
+        newComment: e.target.value
+        });
         
+        // this.handleSubmit();
+    }
+    
+    handleSubmit=(e)=> {
+        // e.preventDefault();
+        console.log('New comment2:', this.state.newComment);
+        this.props.createComments(this.state.newComment, 
+                                  this.props.match.params.id
+        );
+        this.setState({
+            newComment: ''
+            });
     }
 
     render(){
-       
+
         let comments = this.props.comments;
       
         let listOfComment = comments.filter(item =>  
@@ -31,10 +50,13 @@ class Comments extends Component {
         return(
             <div className="CommentsDetail"> 
                  
-                <form id='themeForm' onSubmit={this.handleCreateComments}>
-                    Enter comment: <textarea className="enterFeedback" type="text" name='newComment'/>
-                    <input type="submit" />
-                </form>
+                {/* <form id='themeForm' onSubmit={this.handleCreateComments}> */}
+                    Enter comment: 
+                    <textarea onChange={(e) => this.handleCreateComments(e)} 
+                    className="enterFeedback" type="text" name='newComment'
+                    value={this.state.newComment} />
+                    <input type="submit" onClick={(e) => this.handleSubmit(e)}/>
+                {/* </form> */}
                 {commentList}
             </div>
             

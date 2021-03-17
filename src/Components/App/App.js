@@ -32,17 +32,14 @@ class App extends Component {
     });
   }
 
-  async addComment(feedback, id, name, email) {
+  async addComment(feedback, id, name, email) {  
     const themeId = parseInt(id)
     await axios.post(`${backendUrl}/comments`, { feedback, themeId, name, email });
-    // console.log(feedback);
-    // console.log(themeId);
-    // console.log(name);
-    // console.log(email);
+    
   }
 
   render() {
-    // console.log("App dot JS",this.state.comments);
+    
     return (
       <div className="App">
         <Header></Header>
@@ -63,7 +60,7 @@ class App extends Component {
             </Route>
 
             <Route path='/contact' render={routerProps =>  
-            <ContactUs createComments={this.addComment} />
+            <ContactUs createComments={this.addComment} {...routerProps}/>
             }>
             </Route>
 
