@@ -40,9 +40,8 @@ class Comments extends Component {
         let commentList = listOfComment.map(item => {    
             return (
             <div className="AllComments" key={item.id}>
-                <li>
-                {item.feedback}
-                </li>
+                <br />
+                <li>{item.feedback}</li>
             </div>
             );
         });
@@ -58,7 +57,7 @@ class Comments extends Component {
                     value={this.state.newComment} />
                     <input type="submit" onClick={(e) => this.handleSubmit(e)}/>
                 
-                {commentList}
+                    {commentList}
                 </div>
             </div>
             

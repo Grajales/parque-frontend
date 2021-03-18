@@ -6,15 +6,13 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Location from '../Location/Location'
 import ThemeDetail from '../ThemeDetail/ThemeDetail'
-// import Location from '../Location/Location'
 import ContactUs from '../ContactUs/ContactUs'
 import axios from "axios";
 
-// const backendUrl =
-//   process.env.REACT_APP_BACKEND_URL || "http://localhost:3000/api";
+const backendUrl = "http://localhost:3000/api";
 // const backendUrl =
 //   process.env.REACT_APP_BACKEND_URL || "https://aurora-park-backend.herokuapp.com/api";
-const backendUrl = "https://aurora-park-backend.herokuapp.com/api";  
+// const backendUrl = "https://aurora-park-backend.herokuapp.com/api";  
 
 class App extends Component {
   constructor(props) {
@@ -23,20 +21,24 @@ class App extends Component {
       comments: [],
     };
   }
-
-  componentDidMount=()=> {
-    axios.get(`${backendUrl}/comments`).then((response) => {
-      
-      this.setState({
-        comments: response.data.comments,
-      });
-    });
+  
+  componentDidMount() {
+      this.getAllComments();      
   }
 
-  async addComment(feedback, id, name, email) {  
+  async getAllComments() {
+    const response = await axios.get(`${backendUrl}/comments`);      
+    this.setState({
+      comments: response.data.comments,
+    });
+  }
+  
+  addComment = async (feedback, id, name, email) => {  
     const themeId = parseInt(id)
-    await axios.post(`${backendUrl}/comments`, { feedback, themeId, name, email });
-    
+    await axios.post(`${backendUrl}/comments`, { 
+        feedback, themeId, name, email 
+    });
+    this.getAllComments();
   }
 
   render() {
