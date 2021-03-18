@@ -53,17 +53,6 @@ The following link id=1,2,3,4
 - [https://parque-aurora-frontend.herokuapp.com/location]()
 
 
-
-## Time Frames
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
-
-| Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: |
-| Adding Form | H | 3.5 hrs | 4 hrs |
-| Working with API | H | 10 hrs| 12 hrs |
-| Total | H | 13.5 hrs| 16 hrs |
-
 ## References
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
  -[https://github.com/marcwright/deere-project4-express-api-starter]()
