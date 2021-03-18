@@ -52,7 +52,7 @@ class Comments extends Component {
                   
                 <div className="CommentList"> 
                
-                    Enter comment: 
+                    <h3 className="enterWord">Enter comment: </h3> 
                     <textarea onChange={(e) => this.handleCreateComments(e)} 
                     className="enterFeedback" type="text" name='newComment'
                     value={this.state.newComment} />

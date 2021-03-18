@@ -35,8 +35,11 @@
 .CommentList{
   background-color: white;
   padding-left:2vh;
-  list-style-type: none;
+  list-style-type: '- ';
 
+}
+.enterWord{
+  color: brown;
 }
 .theme-title{
   text-align: left;
@@ -52,6 +55,7 @@
   padding: 2vw;
   color: white;
   font-size:120% ;
+  font-weight: bold;
   border: solid burlywood 0.5vw;
 }
 @media screen and (max-width: 600px) {

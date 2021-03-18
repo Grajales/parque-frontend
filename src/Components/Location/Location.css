@@ -1,12 +1,11 @@
 .Maps{
     display: flex;
-    /* flex-direction: column;
-    flex-wrap: wrap; */
+
     justify-content:center;
   
 }
 .map-img{
-    height: 300px;
+    height: 400px;
     width: auto;
     border: solid green 0.5vw;
     /* padding: .1in; */
@@ -20,3 +19,9 @@
 .V-Title{
     padding: 30px
 }
+@media screen and (max-width: 600px) {
+    .Maps{  
+    flex-direction: column;
+    flex-wrap: wrap; 
+    }
+  }

@@ -12,6 +12,9 @@ function Header() {
                 <Link to='/' style={{textDecoration: 'none'}} >
                 <h1 className="HeaderTitle">Aurora Park </h1>
                 </Link>
+                {/* <Link to='/'style={{color:"cornsilk"}} >
+                <h1 className="HeaderTitle">Aurora Park </h1>
+                </Link> */}
                 <li className="li-link"><Link to='/location' style={{textDecoration: 'none'}}>
                     <h3 className="h-link">Location</h3>
                 </Link>
