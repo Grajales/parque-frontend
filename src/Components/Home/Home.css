@@ -13,8 +13,8 @@
   .theme3 { grid-area: theme3; }
   .theme4 { grid-area: theme4; }
 .Home-Image{
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 333px;
     border: solid black 0.5vw;
     /* padding: .25in; */
      margin-top: 20px;
@@ -27,7 +27,7 @@ main{
   margin-top: 3px;
 }
 .img-title{
-  font-size: large;
+  font-size: 150%;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 600px) {

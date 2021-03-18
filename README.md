@@ -47,7 +47,7 @@ NPM start Links (frontend)
 - [http://localhost:3001/]()<br>
 Heruko Links:<br>
 The following link id=1,2,3,4
-- [https://parque-aurora-frontend.herokuapp.com/theme/1]()
+- [https://parque-aurora-frontend.herokuapp.com/theme/:id]()
 - [https://parque-aurora-frontend.herokuapp.com/contact]()
 - [https://parque-aurora-frontend.herokuapp.com/location]()
 
