@@ -136,12 +136,14 @@ The comments section in each theme page had the following problems:
 
 1. Did not  remove the text in the text box after hiting submit but only after a page refresh
 2. Did not update the comments displayed list after hitting submit but only after a page refresh
-3. Any new created comment was displayed at the end of the list, instead at the top.
+3. Any newly created comment was displayed at the end of the list, instead at the top.
 
 Here is how we fixed those problems:
-1. 
-2. 
-3. 
+1. Added a state in this component and changed the input submission mechanism. Instead of using form onSubmit,
+it was changed to input onChange to manage the state 
+2. Used the async in REACT properly and rearrange our implementation, such that it calls the GET immediately 
+after each new POST
+3. Changed the backend controller code to utilze ORDER by the updatedAt column when performing database query
 
 ## Future additions
 1. We would like to have the option for the user to change the pages words between English and Spanish.
