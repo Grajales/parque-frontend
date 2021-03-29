@@ -13,7 +13,7 @@ render(){
         // console.log("Home dot JS", this.props.comments);
         return(
             <div className="Theme3"> 
-                    <h1 className="theme-title"> Actividades al Aire Libre </h1>
+                    <h1 className="theme-title"> Outdoor Activities </h1>
                 <div className="grid-container"> 
                     <div className="Image1">
                          <img className='theme-img' src={Cannoeing_IMAGE } alt="picnic"/> 
@@ -28,7 +28,7 @@ render(){
                         <img className='theme-img' src={Hike1_IMAGE} alt="picnic"/>
                     </div>
                     <p className="theme-paragraph"> Go cannoeing with friends and family or hike to conquer the bell tower hill</p>
-                    {/* <Comment {...this.props}/>  */}
+                    <Comment {...this.props}/> 
 
                 </div>
             </div>

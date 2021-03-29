@@ -13,7 +13,7 @@ render(){
         // console.log("Home dot JS", this.props.comments);
         return(
             <div className="Theme1"> 
-                    <h1 className="theme-title"> Juegos y Entretenimiento </h1>
+                    <h1 className="theme-title"> Fun and Play </h1>
                 <div className="grid-container"> 
                     <div className="Image1">
                          <img className='theme-img' src={GOROUND_IMAGE} alt="picnic"/> 
@@ -27,9 +27,7 @@ render(){
                     <div className="Image4">
                         <img className='theme-img' src={MIRROR2_IMAGE} alt="picnic"/>
                     </div>
-                    <p className="theme-paragraph"> El parque ofrece varios lugares de recreaci&oacute;n para ni&ntilde;os y adultos. <br/> <br/>
-                    Visite la casa de los espejos y ri&aacute;se de su nueva imagen.<br/> <br/>
-                    Tenemos varias piscinas, para ni&ntilde;os y sus padres, o una piscina aparte para adultos o j&oacute;venes que quieran practicar nataci&oacute;n</p>
+                    <p className="theme-paragraph"> The park has several playgrounds for kids ages 5 and above, visit the mirror house and laugh at your new body image</p>
                     {/* <Comment {...this.props}/>  */}
                 </div>
             </div>
