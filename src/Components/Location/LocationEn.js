@@ -9,7 +9,7 @@ render(){
         return(
             <div className="Location"> 
                 <Link to={{pathname:'https://www.google.com/maps/place/Aurora+Park/@14.2832625,-87.4078118,16z/data=!4m5!3m4!1s0x0:0x45948958cec787aa!8m2!3d14.2846194!4d-87.4044867'}} style={{textDecoration: 'none'}} target="blank">
-                    <h1 className="V-Title"> Vis&iacute;tenos</h1>
+                    <h1 className="V-Title"> Visit Us </h1>
                 </Link>
                 <div className="Maps">    
                     <div className="MapCountry">

@@ -13,14 +13,14 @@ function Header() {
                 <h1 className="HeaderTitle">Aurora Park </h1>
                 </Link> */}
                 <Link to='/'style={{color:"cornsilk", textDecorationLine: 'underline'}} >
-                <h1 className="HeaderTitle">Parque Aurora </h1>
+                <h1 className="HeaderTitle">Aurora Park </h1>
                 </Link>
                 <li className="li-link"><Link to='/location' style={{textDecoration: 'none'}}>
-                    <h3 className="h-link">Ubicaci&oacute;n</h3>
+                    <h3 className="h-link">Location</h3>
                 </Link>
                 </li>
                 <li className="li-link"><Link to='/contact' style={{textDecoration: 'none'}}>
-                    <h3 className="h-link">Cont&aacute;ctenos</h3>
+                    <h3 className="h-link">Contact Us</h3>
                 </Link>
                 </li>
             </ul>
