@@ -1,0 +1,57 @@
+import React, { Component } from "react";
+import "./ContactUs.css";
+import Comment from "../Comment/Comment";
+
+class ContactUs extends Component {
+    
+    handleFormSubmit = (e) => {
+        e.preventDefault();
+        // console.log('Contact Us:', e.target.newInquiry.value);
+        this.props.createComments(e.target.newInquiry.value, 
+                                    5, 
+                                    e.target.newName.value,
+                                    e.target.newEmail.value
+        );
+        this.props.history.push('/');
+        
+    }
+
+    render() {
+
+        let comments = this.props.comments;
+        console.log(comments)
+      
+        // let listOfComment = comments.filter(item =>  
+        //     item.themeId === parseInt(this.props.match.params.id));
+        let commentList = comments.map(item => {  
+            return(   
+             <div className="AllComments" key={item.id}>
+                <li>
+                {item.feedback}
+                </li>
+            </div>
+            );
+            
+        });
+        console.log("Comment List",commentList)
+
+    
+    return (
+        <div className='ContactUs'>
+            <main> 
+            <h1 className="Contact-Title">Contact Us</h1>
+   
+            <form onSubmit={this.handleFormSubmit}>
+                    name: <input className="name" type="text" name='newName'/><br />
+                    email: <input className="email" type="text" name='newEmail'/><br />
+                    Inquiry: <textarea className="Inquiry" type="text" name='newInquiry' rows="8"/><br />
+                    <input type="submit" value="Send" className="button" />
+            </form>
+            {commentList}
+            </main>
+
+        </div>
+    )};
+}
+
+export default ContactUs;

@@ -1,17 +1,18 @@
 
 .gridContainerHome {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      ". theme1 theme2 ."
-      ". theme3 theme4 .";
+      "video theme1 theme2 "
+      "video theme3 theme4 ";
   }
   .theme1 { grid-area: theme1; }
   .theme2 { grid-area: theme2; }
   .theme3 { grid-area: theme3; }
   .theme4 { grid-area: theme4; }
+  .video { grid-area: video; }
 .Home-Image{
     height: 200px;
     width: 333px;
@@ -34,6 +35,7 @@ main{
   .gridContainerHome{
     gap: 5px 5px;
      grid-template-areas: 
+     "video"
      "theme1"
       "theme2" 
       "theme3" 

@@ -28,7 +28,7 @@ render(){
                         <img className='theme-img' src={PICNIC4_IMAGE} alt="picnic"/>
                     </div>
                     <p className="theme-paragraph"> The park has covered picnic areas with grills and benches, bring your food and charcoal or purchase it at the local store      </p>
-                    <Comment {...this.props}/> 
+                    {/* <Comment {...this.props}/>  */}
 
                 </div>
             </div>

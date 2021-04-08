@@ -27,7 +27,8 @@ render(){
                     <div className="Image4">
                         <img className='theme-img' src={PICNIC4_IMAGE} alt="picnic"/>
                     </div>
-                    <p className="theme-paragraph"> The park has covered picnic areas with grills and benches, bring your food and charcoal or purchase it at the local store      </p>
+                    <p className="theme-paragraph"> El parque tiene zonas de p&iacute;cnic equipado con grills y asientos. <br/> <br/> Traiga su comida y carb&oacute;n y prepare un suculento asado para toda su familia y amigos. <br/> <br/>
+                    Reserve una cab&aacute de capacidad de 25 personas o m&aacute;s para sus fiestas familiares; </p>
                     {/* <Comment {...this.props}/>  */}
 
                 </div>

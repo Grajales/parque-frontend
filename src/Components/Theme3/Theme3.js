@@ -27,7 +27,8 @@ render(){
                     <div className="Image4">
                         <img className='theme-img' src={Hike1_IMAGE} alt="picnic"/>
                     </div>
-                    <p className="theme-paragraph"> Go cannoeing with friends and family or hike to conquer the bell tower hill</p>
+                    <p className="theme-paragraph">  El parque ofrece una gran variedad de canoas y kayaks para que navegue con su familia y amigos en el lago o explore la quebrada. <br/> <br/>
+                     Camine por los senderos del parque o escale la monta&ntilde;a de la torre de la campana</p>
                     {/* <Comment {...this.props}/>  */}
 
                 </div>

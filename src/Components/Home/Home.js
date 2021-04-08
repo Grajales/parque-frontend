@@ -3,7 +3,7 @@ import PICNIC_IMAGE from "./Images/HomePicnic.png";
 import PLAY_IMAGE from "./Images/HomePlayGround.png";
 import HIKE_IMAGE from "./Images/HomeRedBridge.jpg";
 import ANIMALS_IMAGE from "./Images/HomeHorsesDucks.jpg";
-
+import WelcomeVideo from "./Videos/VID-20210404-WA0010.mp4";
 import "./Home.css";
 import { Link } from 'react-router-dom';
 import '../App/App.css';
@@ -15,6 +15,12 @@ render(){
             <div> 
                 <main> 
                 <div className="gridContainerHome">  
+                    <div className="video">
+                        <h2>  Bienvenida e Informaci&oacute;n </h2>
+                        <video src={WelcomeVideo} width="300" height="200" controls="controls" />
+                        {/* <video src={WelcomeVideo} width="300" height="200" controls="controls" autoplay="true" /> */}
+                        
+                    </div>
                     <div className="theme1">
                         <Link to='/theme/1'> <img className='Home-Image' src={PLAY_IMAGE} alt="play"/> </Link>
                         <Link to='/theme/1'> <h2 className="img-title"> Juegos y Entretenimiento </h2> </Link>

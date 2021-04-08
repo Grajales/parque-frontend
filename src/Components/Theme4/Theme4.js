@@ -28,7 +28,8 @@ render(){
                     <div className="Image4">
                         <img className='theme-img' src={Ducks_IMAGE} alt="picnic"/>
                     </div>
-                    <p className="theme-paragraph"> Visit the wild guests, or walk the pathways to explore the parks native flowers and vegetation</p>
+                    <p className="theme-paragraph"> Visite los animales del parque y conozca el verdadero rey de la selva.<br/> <br/> 
+                    Camine por los senderos explorando la gran variedad de plantas y flores que tiene el parque en cada una de sus diferentes estacions</p>
                     {/* <Comment {...this.props}/>  */}
                 </div>
             </div>

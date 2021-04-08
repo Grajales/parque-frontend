@@ -1,13 +1,38 @@
+/* .ContactUs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr  1fr ;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". title ."
+    "inquiry . comments"
+  }
+.formato { grid-area: inquiry; }
+.commentList { grid-area: comments; }
+.Contact-Title{grid-area: title;} */
+
+
 .ContactUs {
     min-height: 400px;
-    }
+    display: flex;
+    justify-content: center;
+      }
   .Contact-Title{
       font-size: large;
-      padding: 15px;
+      padding: 1px;
+      margin: 5px;
   }
   .name, .email, .Inquiry{
-      margin: 5px;
+      margin: 10px;
       padding: 5px;
+      text-align: left;
+     
+  }
+  .formato{
+    display: flex;
+   
+    
+     
   }
   .button{
     width: 10em;  

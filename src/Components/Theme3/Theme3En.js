@@ -28,7 +28,7 @@ render(){
                         <img className='theme-img' src={Hike1_IMAGE} alt="picnic"/>
                     </div>
                     <p className="theme-paragraph"> Go cannoeing with friends and family or hike to conquer the bell tower hill</p>
-                    <Comment {...this.props}/> 
+                    {/* <Comment {...this.props}/>  */}
 
                 </div>
             </div>

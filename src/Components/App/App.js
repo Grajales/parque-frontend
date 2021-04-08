@@ -63,7 +63,7 @@ class App extends Component {
             </Route>
 
             <Route path='/contact' render={routerProps =>  
-            <ContactUs createComments={this.addComment} {...routerProps}/>
+            <ContactUs createComments={this.addComment} {...routerProps} {...this.state}/>
             }>
             </Route>
 

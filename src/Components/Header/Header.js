@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Dropdown from 'react-dropdown';
+import Button from 'react-bootstrap/Button';
 import './Header.css';
 import LOGO_IMAGE from "./Images/logo.png";
 
 function Header() {
+    const options = [
+         'Espanol','English'
+      ];
+      const defaultOption = options[0];
+      
     return (
         <div className='Header'>
              
@@ -22,6 +29,15 @@ function Header() {
                 <li className="li-link"><Link to='/contact' style={{textDecoration: 'none'}}>
                     <h3 className="h-link">Cont&aacute;ctenos</h3>
                 </Link>
+                </li>
+                
+                <li className="li-link">
+                
+                {/* <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />; */}
+    
+                {/* <Dropdown options={options} value={defaultOption} placeholder="Select an option" >; 
+                </Dropdown>  */}
+                 
                 </li>
             </ul>
 

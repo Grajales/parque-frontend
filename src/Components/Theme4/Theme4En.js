@@ -29,7 +29,7 @@ render(){
                         <img className='theme-img' src={Ducks_IMAGE} alt="picnic"/>
                     </div>
                     <p className="theme-paragraph"> Visit the wild guests, or walk the pathways to explore the parks native flowers and vegetation</p>
-                    <Comment {...this.props}/> 
+                    {/* <Comment {...this.props}/>  */}
                 </div>
             </div>
             

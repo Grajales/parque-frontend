@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./ContactUs.css";
+import Comment from "../Comment/Comment";
 
 class ContactUs extends Component {
     
@@ -16,18 +17,43 @@ class ContactUs extends Component {
     }
 
     render() {
+
+        let comments = this.props.comments;
+        console.log(comments)
+ 
+        // let commentList = comments.map(item => {  
+        //     return(   
+        //      <div className="AllComments" key={item.id}>
+        //         <li>
+        //         {item.feedback}
+        //         </li>
+        //     </div>
+        //     );
+            
+        // });
+        // console.log("Comment List",commentList)
+
     
     return (
         <div className='ContactUs'>
-            <main> 
-            <h1 className="Contact-Title">Contact Us</h1>
-   
-            <form onSubmit={this.handleFormSubmit}>
-                    name: <input className="name" type="text" name='newName'/><br />
-                    email: <input className="email" type="text" name='newEmail'/><br />
-                    Inquiry: <textarea className="Inquiry" type="text" name='newInquiry' rows="8"/><br />
-                    <input type="submit" value="Send" className="button" />
-            </form>
+            <main > 
+            <div className="Contact-Title"> 
+             <h1 >Cont&aacute;ctenos</h1>
+            </div>
+           
+            <div className="formato"> 
+                <form  onSubmit={this.handleFormSubmit}>
+                        nombre: <input className="name" type="text" name='newName'/><br />
+                        email: <input className="email" type="text" name='newEmail'/><br />
+                        Comentario: <textarea className="Inquiry" type="text" name='newInquiry' rows="8"/><br />
+                        <input type="submit" value="Send" className="button" />
+                </form>
+            </div>
+           
+            {/* <div className="commentList"> 
+            {commentList}
+            </div> */}
+            
             </main>
 
         </div>
