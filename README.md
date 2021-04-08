@@ -55,6 +55,8 @@ The following link id=1,2,3,4
 ## References
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
  -[https://github.com/marcwright/deere-project4-express-api-starter]()
+ -[https://git.generalassemb.ly/john-deere-sei-7/react-heroku-deployment]()
+ -[https://git.generalassemb.ly/john-deere-sei-7/node-express-heroku-deployment]()
 
 ## Code Snippet
 

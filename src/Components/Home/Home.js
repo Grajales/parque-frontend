@@ -16,7 +16,7 @@ render(){
                 <main> 
                 <div className="gridContainerHome">  
                     <div className="video">
-                        <h2>  Bienvenida e Informaci&oacute;n </h2>
+                        <h2>  Bienvenidos </h2>
                         <video src={WelcomeVideo} width="300" height="200" controls="controls" />
                         {/* <video src={WelcomeVideo} width="300" height="200" controls="controls" autoplay="true" /> */}
                         
