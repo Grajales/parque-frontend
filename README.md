@@ -57,7 +57,7 @@ The following link id=1,2,3,4
  -[https://github.com/marcwright/deere-project4-express-api-starter]()
  -[https://git.generalassemb.ly/john-deere-sei-7/react-heroku-deployment]()
  -[https://git.generalassemb.ly/john-deere-sei-7/node-express-heroku-deployment]()
-
+heroku create parque-aurora -b https://github.com/mars/create-react-app-buildpack.git
 ## Code Snippet
 
 The following code shows how I had to modify the reference "Trivia" to "Trivias" in the trivia.js file.
