@@ -46,7 +46,7 @@ class ContactUs extends Component {
                         nombre: <input className="name" type="text" name='newName'/><br />
                         email: <input className="email" type="text" name='newEmail'/><br />
                         Comentario: <textarea className="Inquiry" type="text" name='newInquiry' rows="8"/><br />
-                        <input type="submit" value="Send" className="button" />
+                        <input type="submit" value="Enviar" className="button" />
                 </form>
             </div>
            
