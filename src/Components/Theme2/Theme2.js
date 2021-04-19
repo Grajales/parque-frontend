@@ -27,8 +27,8 @@ render(){
                     <div className="Image4">
                         <img className='theme-img' src={PICNIC4_IMAGE} alt="picnic"/>
                     </div>
-                    <p className="theme-paragraph"> El parque tiene zonas de p&iacute;cnic equipado con asador de parrilla, mesa, y banquetas. <br/> <br/> Traiga su comida y carb&oacute;n y prepare un suculento asado para toda su familia y amistades. <br/> <br/>
-                    Reserve una caseta; de capacidad de 25 personas o m&aacute;s para sus fiestas familiares; </p>
+                    <p className="theme-paragraph"> El parque tiene zonas de p&iacute;cnic equipado con asador de parrilla, mesa, y asientos para p&iacute;cnic. <br/> <br/> Traiga su comida y carb&oacute;n y prepare un suculento asado para toda su familia y amistades. <br/> <br/>
+                    Reserve una caseta de capacidad de 25 personas o m&aacute;s para sus fiestas familiares; </p>
                     {/* <Comment {...this.props}/>  */}
 
                 </div>
